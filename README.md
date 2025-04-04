@@ -1,4 +1,5 @@
-🚦 Traffic Management System using OpenCV
+🚦 Traffic Management System 
+using OpenCV
 This project is a real-time traffic monitoring system that detects overspeeding vehicles using OpenCV and YOLO (Ultralytics). It then sends an e-challan to the registered number of the vehicle.
 
 🚀 Features:
@@ -37,13 +38,16 @@ bash
 Copy
 Edit
 python --version
+
 🔧 Setup Instructions
+
 1️⃣ Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/yourusername/Traffic-management.git
 cd Traffic-management
+
 2️⃣ Create a Virtual Environment (Recommended)
 For Windows:
 powershell
@@ -57,7 +61,9 @@ Copy
 Edit
 python3 -m venv venv
 source venv/bin/activate
+
 3️⃣ Install Required Dependencies
+
 bash
 Copy
 Edit
@@ -83,7 +89,9 @@ Copy
 Edit
 tail -f logs/output.log  # Linux/macOS
 Get-Content logs/output.log -Wait  # Windows PowerShell
+
 📌 How It Works
+
 1️⃣ Loads traffic.mp4 and starts vehicle detection
 2️⃣ Tracks vehicles and estimates their speed
 3️⃣ If speed exceeds 60 km/h, logs the event and sends an e-challan
