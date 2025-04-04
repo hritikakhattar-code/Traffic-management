@@ -1,5 +1,9 @@
-2025-04-03 11:49:55,287 - INFO - 🚦 Starting Traffic Monitoring System
-2025-04-03 11:50:48,019 - INFO - 🚦 Starting Traffic Monitoring System
-2025-04-03 11:52:47,770 - INFO - 🚦 Starting Traffic Monitoring System
-2025-04-03 11:54:15,818 - INFO - 📌 Video processing completed.
-2025-04-03 11:54:15,839 - INFO - 🚦 Traffic Monitoring System Stopped
+
+2025-04-04 11:35:17,080 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '134', 'Connection': 'keep-alive', 'Date': 'Fri, 04 Apr 2025 06:05:16 GMT', 'X-API-Domain': 'api.twilio.com', 'X-Verification-Disclosure': 'Message Accepted. Pending content verification for US/Canada destination numbers:', 'Www-Authenticate': 'Basic realm="Twilio API"', 'Twilio-Request-Id': 'RQad8826bb9823c03e445afa505a0afcee', 'X-Shenanigans': 'none', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 fb6514ed0fa65e8962789d347bfecb50.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BOM78-P4', 'X-Amz-Cf-Id': 'vFUCuAfghyCZNzzXiDMAMSb_-rixTAPFE2ZMPnjEjcwzXOFwm2go2Q=='}
+2025-04-04 11:48:01,025 - INFO - 🚦 Starting Traffic Monitoring System
+2025-04-04 11:49:54,240 - INFO - 🚦 Starting Traffic Monitoring System
+2025-04-04 11:51:23,555 - INFO - 🚦 Starting Traffic Monitoring System
+2025-04-04 11:58:23,834 - INFO - 🚦 Starting Traffic Monitoring System
+2025-04-04 11:59:55,244 - INFO - 📌 Video processing completed.
+2025-04-04 11:59:55,306 - INFO - 🚦 Traffic Monitoring System Stopped
+2025-04-04 12:07:29,175 - INFO - 🚦 Starting Traffic Monitoring System

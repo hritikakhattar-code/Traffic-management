@@ -1,21 +1,38 @@
 import logging
 import os
+from datetime import datetime
 
-log_dir = os.path.join(os.path.dirname(__file__), "../logs")
-os.makedirs(log_dir, exist_ok=True)
-
-log_file = os.path.join(log_dir, "test.log")
-
-# ✅ Manually set UTF-8 encoding by using FileHandler instead of basicConfig
-log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-
-file_handler = logging.FileHandler(log_file, mode="a", encoding="utf-8")  # ✅ UTF-8 encoding
-file_handler.setFormatter(log_formatter)
-
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-logger.addHandler(file_handler)
-
-logger.info("Test log entry - Logging works!")
-
-print(f"Check if logs are written to: {log_file}")
+def setup_logger(name, log_file, level=logging.INFO):
+    """
+    Setup a logger instance
+    
+    Args:
+        name (str): Logger name
+        log_file (str): Path to log file
+        level (int): Logging level
+        
+    Returns:
+        logging.Logger: Configured logger instance
+    """
+    # Create directory for log file if it doesn't exist
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+    
+    # Create formatter
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    
+    # Create file handler
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setFormatter(formatter)
+    
+    # Create logger
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    
+    # Remove existing handlers to avoid duplicates
+    if logger.hasHandlers():
+        logger.handlers.clear()
+    
+    # Add handler to logger
+    logger.addHandler(file_handler)
+    
+    return logger
