@@ -1,5 +1,5 @@
 🚦 Traffic Management System 
-using OpenCV
+(using OpenCV)
 This project is a real-time traffic monitoring system that detects overspeeding vehicles using OpenCV and YOLO (Ultralytics). It then sends an e-challan to the registered number of the vehicle.
 
 🚀 Features:
